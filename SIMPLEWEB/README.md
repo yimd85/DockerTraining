@@ -34,3 +34,6 @@ Use the build command and port forwarding command
 
 we can open up a new window on the terminal then use command
 ```docker ps``` to get the container ID, start up the shell using ```docker exec -it <ID of container> sh```
+
+in order to avoid the dependenies to be ran every time there is an update to the docker file. The only time we will change is if the package.json file is updated.  added ```COPY ./package.json ./```
+
